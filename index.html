@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza's Sanku</title>
-    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <main class="layout">
-        <section class="layout__section header">
+    <main class="layout"> <!-- Contenedor principal con layout -->
+        <section class="layout__section header"> <!-- Sección del header -->
             <img src="assets/imagenes/LogoPizza.png" alt="Logo de la empresa" class="header__logo">
             <h1 class="header__titulo">Bienvenido a Pizzas' Sanku</h1>
             <nav class="layout__section header__nav">
@@ -22,23 +22,31 @@
                 <a href="#sobre-nosotros" class="header__nav-link">Sobre Nosotros</a>
                 <a href="#contacto" class="header__nav-link">Contacto</a>
             </nav>
-        </section>
-        <section class="layout__section hero-section">
-            <section class="hero-section__slider">
-                <section class="hero-section__slides" id="slides">
-                    <div class="hero-section__slide hero-section__img"><img src="assets/imagenes/PizzaSlide1.jpg"
-                            alt="Imagen 1"></div>
-                    <div class="hero-section__slide hero-section__img"><img src="assets/imagenes/PizzaSlide2.jpg"
-                            alt="Imagen 2"></div>
-                    <div class="hero-section__slide hero-section__img"><img src="assets/imagenes/PizzaSlide3.jpg"
-                            alt="Imagen 3"></div>
-                </section>
-            </section>
-        </section>
-        <section class="layout__section main-content">
+        </section><!-- Fin Sección del header -->
+
+        <section class="layout__section hero-section"> <!-- Sección del slider (hero) -->
+            <div class="hero-section__slider"> <!-- Contenedor del slider -->
+                <div class="hero-section__slides" id="slides"> <!-- Contenedor para los slides -->
+                    <div class="hero-section__slide"> <!-- Primer slide -->
+                        <img class="hero-section__slide-img" src="assets/imagenes/PizzaSlide1.jpg" alt="Imagen 1">
+                        <!-- Imagen del slide -->
+                    </div>
+                    <div class="hero-section__slide"> <!-- Segundo slide -->
+                        <img class="hero-section__slide-img" src="assets/imagenes/PizzaSlide2.jpg" alt="Imagen 2">
+                        <!-- Imagen del slide -->
+                    </div>
+                    <div class="hero-section__slide"> <!-- Tercer slide -->
+                        <img class="hero-section__slide-img" src="assets/imagenes/PizzaSlide3.jpg" alt="Imagen 3">
+                        <!-- Imagen del slide -->
+                    </div>
+                </div><!-- Fin Contenedor para los slides -->
+            </div><!-- Fin Contenedor del slider -->
+        </section><!-- Fin Sección del slider (hero) -->
+
+        <section class="layout__section main-content"> <!-- Sección del contenido principal -->
             <h2 class="main-content__titulo">Nuestros Galardones</h2>
             <section class="main-content__pilares">
-                <section class="main-content__pilar">
+                <article class="main-content__pilar">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                         class="main-content__icon" viewBox="0 0 16 16">
                         <path
@@ -47,8 +55,8 @@
                     </svg>
                     <p class="main-content__texto">Contamos con el premio a la mejor pizzeria en el 2024 por nuestros
                         ingredientes de alta calidad.</p>
-                </section>
-                <section class="main-content__pilar">
+                </article>
+                <article class="main-content__pilar">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                         class="main-content__icon" viewBox="0 0 16 16">
                         <path
@@ -56,8 +64,8 @@
                     </svg>
                     <p class="main-content__texto">Visita nuestro local con el típico toque clásico de una pizzería
                         italiana, y sumérgete en el bono mangiaro.</p>
-                </section>
-                <section class="main-content__pilar">
+                </article>
+                <article class="main-content__pilar">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                         class="main-content__icon" viewBox="0 0 16 16">
                         <path
@@ -67,14 +75,16 @@
                     </svg>
                     <p class="main-content__texto">Nuestros precios están acordes a la calidad de nuestros productos,
                         con promociones para que todos puedan deleitar su paladar.</p>
-                </section>
+                </article>
             </section>
-        </section>
-    </main>
-    <section class="layout__section footer">
+        </section><!-- Fin Sección del contenido principal -->
+    </main><!-- Fin Contenedor principal con layout -->
+
+    <section class="layout__section footer"> <!-- Sección del footer -->
         <img src="assets/imagenes/LogoPizza.png" alt="Logo de la empresa" class="footer__logo">
         <p class="footer__texto">&copy; 2024 Pizza's Sanku. Todos los derechos reservados.</p>
-    </section>
+    </section><!-- Fin Sección del footer -->
+
     <script src="assets/script/script.js"></script> <!-- Enlace al archivo JS -->
 </body>
 
