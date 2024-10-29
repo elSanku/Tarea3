@@ -17,165 +17,157 @@ body {
 
 /* Estilos Header */
 .header {
-    background-color: var(--color-principal);
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 5px;
-    box-shadow: 0 5px 8px var(--color-detalles);
+    background-color: var(--color-principal); /* Color de fondo del header */
+    padding: 10px 20px; /* Espaciado interno del header */
+    display: flex; /* Utiliza flexbox para el layout del header */
+    align-items: center; /* Centra verticalmente los elementos del header */
+    justify-content: space-between; /* Espacia elementos entre sí */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 5px 8px var(--color-detalles); /* Sombra del header */
 }
 
 .header__content {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    justify-content: space-between;
+    display: flex; /* Flexbox para el contenido del header */
+    align-items: center; /* Centra verticalmente el contenido */
+    flex: 1; /* Permite que el contenido ocupe el espacio disponible */
+    justify-content: space-between; /* Espacio entre elementos del contenido */
 }
 
 .header__logo {
-    height: 50px;
+    height: 50px; /* Altura del logo */
 }
 
 .header__titulo {
-    color: var(--color-detalles);
-    margin: 0 10px;
-    text-align: center;
-    flex: 1;
+    color: var(--color-detalles); /* Color del título */
+    margin: 0 10px; /* Margen lateral */
+    text-align: center; /* Centra el texto */
+    flex: 1; /* Permite que el título ocupe el espacio disponible */
+    font-size: 30px; /* Tamaño de la fuente */
 }
 
 .header__nav {
-    display: flex;
-    justify-content: flex-end;
+    display: flex; /* Flexbox para la navegación */
+    justify-content: flex-end; /* Alinea los links a la derecha */
 }
 
 .header__nav-link {
-    color: var(--color-detalles);
-    text-decoration: none;
-    margin-left: 20px;
-    padding: 7px 10px;
-    transition: background-color 0.3s, box-shadow 0.3s; /* Añadir transiciones */
+    color: var(--color-detalles); /* Color de los links de navegación */
+    text-decoration: none; /* Elimina subrayado */
+    margin-left: 20px; /* Margen a la izquierda de los links */
+    padding: 7px 10px; /* Espaciado interno de los links */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transiciones suaves para hover */
 }
 
 .header__nav-link:hover {
-    background-color: var(--color-navegador);
-    border-radius: 5px;
-    box-shadow: 5px 5px 8px var(--color-detalles);
+    background-color: var(--color-navegador); /* Color de fondo al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados en hover */
+    box-shadow: 5px 5px 8px var(--color-detalles); /* Sombra al pasar el mouse */
 }
 
 /* Estilos Slider (Carrusel) */
 .hero-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh; /* Ajusta la altura del hero */
-    margin: 15px 0;
+    flex: 1; /* Deja que esta sección ocupe el espacio disponible */
+    display: flex; /* Flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin: 15px 0; /* Margen superior e inferior */
     cursor: pointer; /* Indica que es interactivo */
+    position: relative; /* Contexto para posicionamientos internos */
 }
 
 .hero-section__slider {
-    position: relative;
+    flex: 1; /* Permite que el slider ocupe el espacio disponible */
     max-width: 800px; /* Ancho máximo del slider */
     max-height: 400px; /* Altura máxima del slider */
-    overflow: hidden; /* Oculta el contenido que desborda */
+    overflow: hidden; /* Oculta contenido que desborda */
     border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 5px 5px 8px var(--color-detalles); /* Sombra */
-    display: flex;
-    justify-content: center;
+    box-shadow: 5px 5px 8px var(--color-detalles); /* Sombra del slider */
 }
 
 .hero-section__slides {
     display: flex; /* Flexbox para los slides */
-    align-items: center;
-    transition: transform 0.5s ease; /* Transición suave */
+    align-items: center; /* Centra verticalmente los slides */
+    transition: transform 0.5s ease; /* Transición suave para movimiento de slides */
 }
 
 .hero-section__slide {
     min-width: 100%; /* Cada slide ocupa el 100% del ancho */
-    align-items: center; /* Centra verticalmente */
 }
 
-.hero-section__img {
+.hero-section__slide-img {
     width: 100%; /* Imagen ocupa todo el ancho del slide */
     height: 100%; /* Imagen ocupa toda la altura del slide */
     object-fit: cover; /* Mantiene la relación de aspecto de la imagen y cubre el contenedor */
 }
 
-.hero-section__img img {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    height: 100%; /* Ocupa toda la altura del contenedor */
-    object-fit: cover; /* Cubre el contenedor manteniendo la relación de aspecto */
-
-}
-
 /* Estilos Main */
 .main-content {
-    padding: 0rem 1rem 2rem 1rem;
+    padding: 0rem 1rem 2rem 1rem; /* Espaciado del contenido principal */
 }
 
 .main-content__titulo {
-    text-align: center;
-    color: var(--color-detalles);
-    margin: 15px 0;
+    text-align: center; /* Centra el título del contenido principal */
+    color: var(--color-detalles); /* Color del texto */
+    margin: 2rem 0; /* Margen superior e inferior */
 }
 
 .main-content__pilares {
-    display: grid; /* Cambiar a grid */
+    display: grid; /* Cambiar a grid para los pilares */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas responsivas */
     gap: 20px; /* Espaciado entre pilares */
-    margin: 20px 0;
+    margin: 20px 0; /* Margen superior e inferior */
 }
 
 .main-content__pilar {
-    text-align: center;
-    padding: 1rem; /* Cambiado a rem */
-    border: 1px solid var(--color-principal);
-    border-radius: 5px;
-    box-shadow: 5px 5px 8px var(--color-detalles);
-    background-color: var(--color-principal);
-    transition: transform 0.2s ease; /* Añadir transición */
+    text-align: center; /* Centra el texto del pilar */
+    padding: 1rem; /* Espaciado interno del pilar */
+    border: 1px solid var(--color-principal); /* Borde del pilar */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 5px 5px 8px var(--color-detalles); /* Sombra del pilar */
+    background-color: var(--color-principal); /* Color de fondo del pilar */
 }
 
 .main-content__texto,
 .main-content__icon {
-    color: var(--color-detalles);
+    color: var(--color-detalles); /* Color del texto e iconos */
 }
+
 .main-content__icon:hover {
-    transition: transform 0.3s ease; /* Transición suave */
+    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
     transform: translateY(-5px); /* Eleva el pilar al pasar el ratón */
 }
 
 /* Estilo Footer */
 .footer {
-    border-radius: 5px;
-    box-shadow: 0px 0px 8px 5px var(--color-detalles);
-    background-color: var(--color-principal);
-    color: var(--color-detalles);
-    text-align: center;
-    padding: 20px 0;
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0px 0px 8px 5px var(--color-detalles); /* Sombra del footer */
+    background-color: var(--color-principal); /* Color de fondo del footer */
+    color: var(--color-detalles); /* Color del texto */
+    text-align: center; /* Centra el texto en el footer */
+    padding: 20px 0; /* Espaciado interno del footer */
 }
 
 .footer__logo {
-    height: 40px;
-    margin-bottom: 10px;
+    height: 40px; /* Altura del logo en el footer */
+    margin-bottom: 10px; /* Margen inferior del logo */
 }
 
 /* Media Queries */
 @media (max-width: 838px) {
     .header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra elementos en la columna */
+        text-align: center; /* Centra el texto */
     }
 
     .header__nav {
-        justify-content: center;
-        margin-top: 10px;
+        justify-content: center; /* Centra los links de navegación */
+        margin-top: 10px; /* Margen superior para separación */
     }
 
     .header__nav-link {
-        margin: 5px;
-        text-align: center;
+        margin: 5px; /* Margen para los links de navegación */
+        text-align: center; /* Centra el texto de los links */
     }
 
     .main-content__pilares {
